@@ -274,7 +274,7 @@ def cluster(mat,threshold1,threshold2):
                         all_detections_pixels.append(mat[i][j])
                         all_detections_pixels.append(mat[i][j-1])
                         all_detections_pixels.append(mat[i][j+1])
-                        all_detections_photons.append(mat[i][j]+mat[i][j+1]+mat[i][j+1])
+                        all_detections_photons.append(mat[i][j]+mat[i][j-1]+mat[i][j+1])
                         cluster = [[i,j],[i,j-1],[i,j+1]]
                         if np.max(Neighbouring_Cluster(mat,cluster)) < threshold2:
                             #valid_detections_photons.append(mat[i][j]+mat[i][j+1]+mat[i][j-1])
