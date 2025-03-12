@@ -8,7 +8,7 @@ Copy right SHI, YuanFeng  石元峰
 
 
 
-To generate new data, please use MC_generate_data  -> this creates an hdf5 file
+To generate new data, please use MC_new-> this creates an hdf5 file
 
 Then run the cluster algorithm through "clustering" or "clustering_Low_XP" (XP=expence)
 
